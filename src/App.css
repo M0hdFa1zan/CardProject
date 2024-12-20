@@ -1,0 +1,136 @@
+* {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  background: url(https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2149017895.jpg?t=st=1734693296~exp=1734696896~hmac=f3e122f93af495c1691a6adc5d7aea4fb7c193f36d56260de78c646baf383457&w=1380);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app>h1 {
+  position: absolute;
+  top: 5%;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
+  height: 320px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  border: 3px solid rgb(252, 172, 172);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 25%, rgba(232, 229, 229, .5) 100%);
+}
+
+.square {
+  position: absolute;
+  left: 0px;
+  color: pink;
+  width: 20%;
+  height: 36%;
+  background-color: rgb(252, 172, 172);
+}
+
+.ring-one,
+.ring-two,
+.ring-three {
+  position: absolute;
+  color: transparent;
+}
+
+.ring-one {
+  width: 40px;
+  height: 40px;
+  right: 60px;
+  top: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid rgb(252, 172, 172);
+}
+
+.ring-two {
+  width: 20px;
+  height: 20px;
+  left: 50px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid rgb(238, 115, 115);
+}
+
+
+.user-img {
+  display: flex;
+  width: 37%;
+  z-index: 2;
+  margin-left: 30px;
+}
+
+.user-img img {
+  width: 90%;
+  border-radius: 20%;
+  border: 5px solid rgb(252, 172, 172);
+}
+
+.user-details {
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loading,
+.error {
+  margin: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: 85%;
+    height: 280px;
+  }
+
+  .user-img {
+    display: flex;
+    width: 57%;
+    z-index: 2;
+    margin-left: 0px;
+  }
+
+  .user-details {
+    font-size: 18px;
+    gap: 5px;
+  }
+}
